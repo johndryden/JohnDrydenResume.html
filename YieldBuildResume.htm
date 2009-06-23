@@ -1,77 +1,123 @@
+<html>
 <head>
-
+	<title>John Dryden&apos;s Resume</title>
+	<style type="text/css">
+		body {
+			font-family: Comic Sans MS
+		}
+		dl {
+			margin-top: 0;
+			margin-bottom: 0
+		}
+		ul {
+			margin-top: 0;
+			margin-bottom: 0
+		}
+		.header-left
+		{
+			float: left
+		}
+		.header-middle
+		{
+			position:absolute;
+			width: inherit;
+			text-align: center
+		}
+		.header-right
+		{
+			text-align: right
+		}
+		.main-content
+		{
+			float: center; 
+			width: 800px; 
+			text-align: left
+		}
+		.list-group
+		{
+			padding-top: 10px
+		}
+	</style>
+ 
 </head>
-<body style="background-color: white" >
-	<font face="Comic Sans MS" >
-		<center>
-			<div style="background-color: FFFFFF; float: center; width: 800px; text-align: left" >
-				<div>
-					<div style="text-align: center" >
-						<b>John Dryden</b>
-					</div>
-					<hr/>
-					<div style="float: left">
-						(805) 680-8813
-						<br/>
-						<a href="mailto:johndryden@gdmllc.com">johndryden@gdmllc.com</a>
-					</div>
-					<div style="text-align: right" >
-						672 Haight St.
-						<br/>
-						San Francisco, Ca 94117
-					</div>
-				</div>
-				<hr/>
-				<div >
-					<b>Education</b>
-					<br/>
-					Physics B.S, UC Santa Barbara 2005
-				</div>
-				<hr/>
-				<div>
-					<b>Experience</b>
-					<br/>
-					<a href="http://gdmllc.com" a>Global Data Mining, LLC</a><br/>
-					Software Engineer (May 2006 - Present)
-				</div>
-				<div style="padding-top: 10px" >
-					Excel Person:
-					<ul type="circle" style="margin-top: 0" >
-						<li>Analyze and interpret Government Data using T-SQL</li>
-						<li>Work with global trade experts to extract pertinent information</li>
-						<li>Automated the process</li>
-					</ul>
-				</div>
-				<div>
-					Web Developer:
-					<ul type="circle" style="margin-top: 0" >
-						<li>Formulate web application designs with product managers and customers</li>
-						<li>Collaborate with software engineers both internally and externally to consolidate data</li>
-						<li>Design databases with focus on stored procedures, views, keys, and triggers</li>
-						<li>Create classes to increase source readiblity and versatility</li>
-						<li>Pragmatically code c# ASP.net apps anticipating any possible change or malfunction</li>
-						<li>Implement apps by launching with effective error reporting and data monitoring</li>
-						<li>Provide technical support for clients when they call</li>
-					</ul>
-				</div>
-				<hr/>
-				<div>
-					<b>Technical Skills</b>
-					<dl style="margin-top: 0" >
-						<dt>Proficient in:</dt>
-						<dd>C#, Visual Basic, ASP.net, VBA, T-SQL, HTML, & SVN</dd>
-						<dd>My home computers run Ubuntu, CrunchBang Linux, & CentOS</dd>
-						<dt>Currently Learning:</dt>
-						<dd>Ruby + Merb (with MySQL)</dd>
-						<dt>Would Also Enjoy Learning:</dt>
-						<dd>JavaScript & jQuery</dd>
-					</dl>
-				</div>
-				<hr/>
-				<div>
-					<b>Other interests:</b> San Francisco, Spectator Sports, and <a href="http://www.parachutecenter.com" >Sky Diving</a>
-				</div>
-			</div>
-		</center>
-	</font>
+<body>
+    <center>
+      <div class="main-content" >
+	<div class="header-middle" >
+	  <big><strong>John Dryden</strong></big>
+	</div>
+        <div>
+          <div class="header-left">
+            (805) 680-8813
+            <br/>
+            <a href="mailto:johndryden@gdmllc.com">johndryden@gdmllc.com</a>
+          </div>
+          <div class="header-right" >
+            672 Haight St.
+            <br/>
+            San Francisco, Ca 94117
+          </div>
+        </div>
+        <hr/>
+        <div>
+          <b>Education</b>
+          <br/>
+          Physics B.S., UC Santa Barbara 2005
+        </div>
+        <hr/>
+        <div>
+          <b>Technical Skills</b>
+          <dl>
+            <dt>Proficient in:</dt>
+            <dd>C#, Visual Basic, ASP.net, VBA, T-SQL, HTML, CSS, &amp; Subversion</dd>
+            <dd>My home computers run Ubuntu, CrunchBang Linux, &amp; CentOS</dd>
+            <dt>Currently Learning:</dt>
+            <dd>Ruby + Merb (with MySQL)</dd>
+            <dt>Would Also Enjoy Learning:</dt>
+            <dd>JavaScript &amp; jQuery</dd>
+          </dl>
+        </div>
+        <hr/>
+        <div>
+          <b>Experience</b>
+          <br/>
+          <a href="http://www.gdmllc.com">Global Data Mining, LLC</a><br/>
+          Software Engineer (May 2006 - Present)
+        </div>
+        <div class="list-group" >
+          Web Developer:
+          <ul type="circle" >
+            <li>Design clients&apos; .net web applications with an emphasis on matching invoice items to <a href="http://www.usitc.gov/tata/index.htm">HTS Codes</a></li>
+            <li>Link HTS Codes to supporting trade data in databases hosted by our sister company, <a href="http://CustomsInfo.com" >CustomsInfo</a></li>
+	    <li>Communicate with external developers to automate the exchange of data including XML, CSV, &amp; EDI</li>
+            <li>Apply object-oriented design principles to increase source readability and versatility &amp; obey DRY</li>
+            <li>Use views to make urgent last minute client requested modifications</li>
+	    <li>Create triggers that update tables and sync them with corresponding views to cut down query time</li>
+            <li>Release the application (this recent app was $80,000) and provide technical support</li>
+          </ul>
+        </div>
+	<div class="list-group" >
+		Innovative projects I felt GDM needed, I programmed, &amp; I released:
+		<ul type="circle" >
+			<li>Diagnostic program that runs once per day to ensure the reliability of our data and scheduled tasks</li>
+			<li>SMTP .DLL that logs email activity, and a scheduled task that retries failed send attempts</li>
+			<li>Error reporting .DLL that logs unhandled exceptions then sends email notifications (pre-release)</li>
+		</ul>
+	</div>
+        <div class="list-group" >
+          MS Office Programmer:
+          <ul type="circle" >
+            <li>Write Stored Procedures that create succinct tables by analyzing clients&apos; 
+		<a title="Importer Trade Activity Requests" href="http://www.cbp.gov/xp/cgov/admin/fl/foia/itrac/itrac.xml">ITRAC</a> data</li>
+            <li>Write VBA that runs Stored Procedures and from them creates Excel and PowerPoint reports</li>
+            <li>Provide CFOs with these MS Office documents that our sales team sells for $1,000 to $10,000</li>
+          </ul>
+        </div>
+        <hr/>
+        <div>
+          <b>Other Interests:</b> San Francisco, Sports, and Sky Diving
+        </div>
+      </div>
+    </center>
 </body>
+</html>
